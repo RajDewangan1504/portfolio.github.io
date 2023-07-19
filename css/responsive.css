@@ -10,7 +10,7 @@
 
 
  @media(max-width : 767px) {
-
+.portfolio-section .portfolio-item,
      .contact-section .w-50,
      .contact-section .contact-item,
      .portfolio-popup .description,
