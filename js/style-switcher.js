@@ -1,3 +1,4 @@
+
 /*--------- toggle style switcher -----------*/
 const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
 
@@ -101,8 +102,5 @@ window.addEventListener("load",() =>{
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
-
-
-
 
 

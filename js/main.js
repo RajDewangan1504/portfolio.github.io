@@ -1,3 +1,4 @@
+
 /*---------------navigation menu-------------------*/
 (() =>{
     const hamburgerBtn = document.querySelector(".hamburger-btn"),
@@ -273,4 +274,32 @@ window.addEventListener("load",() =>{
     } ,600)
 }
 )
+
+
+// -----------------e mail service----------------
+
+// Initialize EmailJS with your public key
+emailjs.init("wrGk58iaRvhh4_-k1");
+
+// Handle form submission
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Send the email
+        emailjs.sendForm('service_2gaiog5', 'template_3qjesok', this)
+            .then(function(response) {
+                console.log('Success:', response);
+                alert('Message sent successfully!');
+                window.location.href = '/';
+            }, function(error) {
+                console.error('Error:', error);
+                alert('Failed to send message.');
+            });
+    });
+});
+
+
+
+
 
